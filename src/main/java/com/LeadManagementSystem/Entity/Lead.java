@@ -65,13 +65,9 @@ public class Lead {
     private String email;
 
 	public Lead(long l, String string, String string2, String string3, String mobileNumber2, String string4,
-			String string5) {
-		// TODO Auto-generated constructor stub
-	}
+			String string5) {}
 
-	public Lead() {
-		// TODO Auto-generated constructor stub
-	}
+	public Lead() {}
 
 	public Long getLeadId() {
 		return leadId;

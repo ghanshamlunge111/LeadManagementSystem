@@ -20,13 +20,6 @@ public class LeadServiceImpl implements LeadService {
 	@Autowired
 	private LeadRepository leadRepository;
 
-	//	@Override
-	//    public Lead createLead(Lead lead) {
-	//		System.out.println("Inside Create Lead Service Impl");
-	//		return leadRepository.save(lead);
-	//        // Perform validations and create lead in the database
-	//    }
-
 	@Override
 	@Transactional
 	public int createLead(Lead lead) {
@@ -39,7 +32,6 @@ public class LeadServiceImpl implements LeadService {
 	        TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
 	        throw e;
 		}
-		//return -1;
 	}
 	@Override
 	public List<Lead> getLeadByMobileNumber(String mobileNumber) {

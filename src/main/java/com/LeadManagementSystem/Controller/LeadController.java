@@ -89,7 +89,6 @@ public class LeadController {
 	            response.put("errorResponse", errorResponse);
 	            return new ResponseEntity<>(response.toString(), HttpStatus.BAD_REQUEST);
 	        } catch (JSONException e) {
-	            //e.printStackTrace();
 	            return new ResponseEntity<>(response.toString(), HttpStatus.BAD_REQUEST);
 	        }
 	    } else {
